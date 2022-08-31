@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import GradientBoostingClassifier
 
 
-data = pd.read_csv('LoanData.csv')
+data = pd.read_csv('data/LoanData.csv')
 data['Gender'] = data['Gender'].fillna(data['Gender'].mode()[0])
 data['Married'] = data['Married'].fillna(data['Married'].mode()[0])
 data['Dependents'] = data['Dependents'].fillna(data['Dependents'].mode()[0])
@@ -44,7 +44,7 @@ data['Property_Area'] = data['Property_Area'].replace(('Urban','Semiurban', 'Rur
 data['Dependents'] = data['Dependents'].replace(('0', '1', '2', '3+'), (0, 1, 2, 3))
 y = data['Loan_Status']
 x = data.drop(['Loan_Status'], axis = 1)
-x_resample, y_resample  = SMOTE().fit_sample(x, y.values.ravel())
+x_resample, y_resample  = SMOTE().fit_resample(x, y.values.ravel())
 
 
 from sklearn.model_selection import train_test_split

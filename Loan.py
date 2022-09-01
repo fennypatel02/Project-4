@@ -60,13 +60,13 @@ def prediction():
 		Loan_amount_term = int(Loan_amount_term)
 		credit = int(credit)
 		x_app = np.array([[gender, married, dependat,education,employ,annual_income,co_income,Loan_amount,Loan_amount_term,credit,proper]])
-		model = joblib.load('Forest.pkl')
+		model = joblib.load('data\Loan_status.pkl')
 		ans = model.predict(x_app)
 		if (ans==1):
-			print("Congratulations your eligble for this Loan")
+			print("Congratulations your eligible for this loan!!")
 		else:
-			print("We sad to inform that your request has not been accepted")
-		return render_template('shit.html', prediction=ans)
+			print("We sad to inform that you are not eligible for this loan!!")
+		return render_template('design.html', prediction=ans)
 	except ValueError:
 		return render_template('error.html', prediction=1)
 	

@@ -1,11 +1,15 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+
 model = pickle.load(open('loan_status.pkl', 'rb'))  # opening pickle file in read mode
+
 app = Flask(__name__)  # initializing Flask app
+
 @app.route("/")
 def hello():
     return render_template('index.html')
+
 @app.route("/predict", methods=['POST'])
 def predict():
     if request.method == 'POST':
@@ -61,5 +65,7 @@ def predict():
         else:
             return render_template('index.html', prediction_text="Congrats! You are eligible for Loan.")
         return render_template('index.html')
-app.run(host="0.0.0.0")            # deploy
+    
+if __name__ == '__main__':
+    app.run(debug=True)
 #app.run(debug=True)                # run on local system

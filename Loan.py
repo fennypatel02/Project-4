@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def home():
-	return render_template('Loan_Prediction.html')
+	return render_template('loan_prediction_app.html')
 
 @app.route('/prediction', methods = ['POST'])
 def prediction():
@@ -66,7 +66,7 @@ def prediction():
 			print("Congratulations your eligible for this loan!!")
 		else:
 			print("We sad to inform that you are not eligible for this loan!!")
-		return render_template('design.html', prediction=ans)
+		return render_template('result.html', prediction=ans)
 	except ValueError:
 		return render_template('error.html', prediction=1)
 	

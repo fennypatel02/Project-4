@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Sign Up #2</title>
+  </head>
+	
+</head>
+
+<body>
+	<div class="d-lg-flex half">
+		<div class="bg order-1 order-md-2" style="background-image: url('images/3.jpg');"></div>
+		<div class="contents order-2 order-md-1">
+	
+		  <div class="container">
+			<div class="row align-items-center justify-content-center">
+			  <div class="col-md-7 py-5">
+				<h3>Loan Approval Prediction Form</h3>
+				<p class="mb-4">Fill out the following form to determine your chances for loan approval.</p>
+				<form action="#" method="post">
+				  
+					
+<div class="sco">
+ 
+ 	<th>
+ 		
+ 		<form  action="{{url_for('prediction')}}" method="POST">
+		
+
+		
+		<label>GENDER:</label>&nbsp;&nbsp;
+			<input type="radio" value="male" name="gender"> Male 
+			<input type="radio" value="Female" name="gender" > Female
+		<br><br>
+				
+		<label>MARITAL STATUS</label>&nbsp;&nbsp;
+			<input type="radio" value="married" name="status"> Married
+			<input type="radio" value="Single" name="status"> Single
+		<br><br>
+	
+		<label>NUMBER OF DEPENDANTS</label>&nbsp;&nbsp;
+		<select name = "dependants">
+			<option value="1"   value="1">1</option>
+			<option value="2"   value="2">2</option>
+			<option value="3"   value="3">3+</option>
+		</select>
+		<br><br>
+
+		<label>LEVEL OF EDUCATION</label>&nbsp;&nbsp;
+		<select name = "education">
+			<option value="Graduate" >Graduate</option>
+			<option value="Not Graduate" > Not Graduate</option>
+		</select>
+		<br><br>
+
+		<label>EMPLOYMENT STATUS</label>&nbsp;&nbsp;
+		<select name="employ">
+			<option value="Yes">Employed</option>
+			<option value="Yes"> Self Employed</option>
+			<option value="Yes">I do both</option>
+			<option value="No">None of above</option>
+		</select>
+		<br><br>
+		
+		<label>APPLICANT"S ANNUAL INCOME (K) </label>&nbsp;&nbsp;
+		<input type="text" name="aincome", placeholder="e.g. 120">
+		<br><br>
+
+		<label>CO-APPLICANT'S INCOME (K) </label>&nbsp;&nbsp;
+		<input type="text" name="coincome", placeholder="e.g. 55">
+		<br><br>
+		<label>LOAN AMOUNT (K)</label>&nbsp;&nbsp;
+		<input type="text" name="Lamount", placeholder="e.g. 560">
+		<br><br>
+		
+		<label>LOAN TERM IN MONTHS</label>&nbsp;&nbsp;
+		<input type="text" name="Lamount_term", placeholder="e.g. 360">
+		<br><br>
+
+		<label>DO YOU HAVE CREDIT HISTOTY? </label>&nbsp;&nbsp;
+		<select name="credit">
+			<option Value = "1">Yes</option>
+			<option Value = "0">No</option>
+		</select>
+		<br><br>
+
+		<label>PROPERTY AREA</label> &nbsp;&nbsp;
+		<select name = "property_area">
+		<option value="urban">Urban</option>
+		<option value="semiurban">Semi Urban</option>
+		<option value="rural">Rural</option>
+		</select>
+		<br><br>
+		<input type="submit" name="sumbit" value="Register" class="btn px-5 btn-primary">
+    </form>
+     </th>
+  
+	
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

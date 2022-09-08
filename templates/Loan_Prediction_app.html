@@ -2,37 +2,31 @@
 <html>
 
 <head>
-    <!--bootstrap link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
     <style type="text/css">
+        #header img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+        }
+        
         #header h1 {
             background: rgb(245, 83, 83);
             text-align: center;
             padding: 30px;
             top: 50%;
         }
-        
-        #header img {
-            float: left;
-            width: 100px;
-            height: 100px;
-            margin-top: 45px;
-            margin-left: 10px;
-        }
     </style>
 
     <title>Loan eligibility predictior </title>
+
 </head>
 
-<body>
-    <header>
-        <div id="header">
-            <img style="display: inline; " scr="images\loan-logo.png" width="10" height="10" alt="loan logo" />
-            <h1>Loan Eligibility Predictor Application</h1><br><br>
-
-        </div>
-    </header>
+<body style="background-color: rgb(247, 242, 235);">
+    <div id="header">
+        <img src="https://png.pngtree.com/png-vector/20190418/ourlarge/pngtree-vector-gaving-money-icon-png-image_953060.jpg" alt="logo">
+        <h1>Loan Eligibility Predictor App</h1>
+    </div>
 
     <div class="appform" style="background-color: rgb(187, 189, 192);">
         <table align="center" class="reg">
@@ -72,7 +66,7 @@
                     <select name="employ">
 			        <option value="No">Employed</option>
 			        <option value="Yes"> Self Employed</option>
-			        <option value="Yes">I do both</option>
+			        <option value="Yes">Both</option>
 			        <option value="No">None of above</option>
 		            </select>
                     <br><br>
@@ -112,9 +106,7 @@
                     <br><br>
 
                     <!--Submit button centered-->
-                    <input type="submit" value="Submit" class="btn-dark " style="margin-left: 250px;">
-
-                    <!--<input type="submit" name="sumbit" value="Submit">-->
+                    <input type="submit" value="Submit" class="btn-dark " style="margin-left: 30px;">
                 </form>
             </th>
         </table>
@@ -123,6 +115,8 @@
 
     <footer>
         <div>
+            <!--credits-->
+            <p style="text-align: center;">Developed by <a href="Loan_Prediction_app.html">Vasanta Prayaga, Fenny Patel, Parisa Ch, Ali Sa, Luis Hernandez @2022</a>
 
         </div>
     </footer>

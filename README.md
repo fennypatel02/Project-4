@@ -1,5 +1,7 @@
 # Loan Prediction Application Using Logistic Regression and Machine Learning
  * by: Vasanta Prayaga, Fenny Patel, Luis Hernandez, Ali Saghafi, Parisa Charkhgary
+ 
+![Loan](https://github.com/fennypatel02/Project-4/blob/main/templates/loanpre-thumbnail-1200x1200%202.png)
 
 ### Content
 
@@ -16,14 +18,13 @@ Further application was developed to automate the loan eligibility process in re
 # Data 
 
 ## About the Data
-The dataset contains information about Loan Applicants. This dataset includes attributes like Loan ID, gender, marital status, the level of education, applicant’s income etc. 
+The dataset contains information about Loan Applicants. There are 12 independent columns and 1 dependent column. This dataset includes attributes like Loan ID, gender, if the loan applicant is married or not, the level of education, applicant’s income etc. 
 
-To load the loan data in your jupyter notebook, use the below command:
+To load the training data in your jupyter notebook, use the below command:
 
 import pandas as pd
 ```
-loan = pd.read_csv('data/loan.csv')
-```
+loan_data  = pd.read_csv("https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_train.csv" )
 
 ## Data Description
 

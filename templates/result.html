@@ -4,6 +4,20 @@
 <head>
     <title>Loan eligibility result</title>
     <style>
+        #header img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+        }
+
+        #header h1 {
+            background: rgb(245, 83, 83);
+            text-align: center;
+            padding: 30px;
+            top: 50%;
+        }
+
         #overlay {
             display: none;
             position: absolute;
@@ -15,7 +29,7 @@
             opacity: 0.8;
             z-index: 100;
         }
-        
+
         #popup {
             display: none;
             position: absolute;
@@ -30,17 +44,17 @@
             /*Half the value of height to center div*/
             z-index: 200;
         }
-        
+
         #popupclose {
             float: right;
             padding: 10px;
             cursor: pointer;
         }
-        
+
         .popupcontent {
             padding: 10px;
         }
-        
+
         #button {
             cursor: pointer;
         }
@@ -48,6 +62,13 @@
 </head>
 
 <body style="background-color: lightgray;">
+    <div id="header">
+        <a href="/"> <img
+                src="https://png.pngtree.com/png-vector/20190418/ourlarge/pngtree-vector-gaving-money-icon-png-image_953060.jpg"
+                alt="logo">
+        </a>
+        <h1>Loan Eligibility Predictor App</h1>
+    </div>
     <div id="maincontent">
         <h1 style="text-align: center;">Please wait while we process your request and check for your eligibility!!</h1>
         <h2>
@@ -67,7 +88,8 @@
                             <h1> Your information has been submitted. </h1><br> {% if prediction== 1 %}
                             <h1>Congratulations you are eligble for this loan!!</h1>
                             <br><br> {% elif prediction==0 %}
-                            <h1 style="color: red">We are sad to inform you that your are not eligible for this loan.</h1>
+                            <h1 style="color: red">We are sad to inform you that your are not eligible for this loan.
+                            </h1>
                             {% endif %}
                         </th>
                     </table>
@@ -82,12 +104,12 @@
         var popup = document.getElementById("popup");
         var button = document.getElementById("button");
         // Close Popup Event
-        closePopup.onclick = function() {
+        closePopup.onclick = function () {
             overlay.style.display = 'none';
             popup.style.display = 'none';
         };
         // Show Overlay and Popup
-        button.onclick = function() {
+        button.onclick = function () {
             overlay.style.display = 'block';
             popup.style.display = 'block';
         }
@@ -96,7 +118,8 @@
 <footer>
     <div>
         <!--credits-->
-        <p style="text-align: center;">Developed by <a href="Loan_Prediction_app.html">Vasanta Prayaga, Fenny Patel, Parisa Ch, Ali Sa, Luis Hernandez @2022</a>
+        <p style="text-align: center;">Developed by <a href="Loan_Prediction_app.html">Vasanta Prayaga, Fenny Patel,
+                Parisa Ch, Ali Sa, Luis Hernandez @2022</a>
 
     </div>
 </footer>

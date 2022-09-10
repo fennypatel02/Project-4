@@ -13,6 +13,18 @@ For the purpose of this project we tried Logistic Regression, Random Forest Clas
 Logistic Regression Model gave us highest accuracy and has been chosen for making predictions for this project.
 Further application was developed to automate the loan eligibility process in real time based on the information provided by the customer applying for a loan.
 
+# Data 
+
+## About the Data
+The dataset contains information about Loan Applicants. This dataset includes attributes like Loan ID, gender, if the loan applicant is married or not, the level of education, applicant’s income etc. 
+
+To load the loan data in your jupyter notebook, use the below command:
+
+import pandas as pd
+```
+loan = pd.read_csv('data/loan.csv')
+```
+
 ## Data Description
 
 * Loan_ID: A unique ID assigned to every loan applicant

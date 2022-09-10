@@ -1,10 +1,18 @@
 # Project-4
-Loan Prediction Application Using
-Logistic Regression and Machine Learning
+Loan Prediction Application Using Logistic Regression and Machine Learning
+by: Vasanta Prayaga, Fenny Patel, Luis Hernandez, Ali Saghafi, Parisa Charkhgary
 
-# Content
+## Content
 
 A loan application is used by borrowers to apply for a loan. Through the loan application, borrowers reveal key details about their finances to the lender. The loan application is crucial to determining whether the lender will grant the request for funds or credit.
+
+## Introduction 
+We analyzed data and built models based on several factors to help predict customer loan eligibility. We trained the models and tested to see which was the most efficient and accurate model to be used for our predictions.
+
+For the purpose of this project we tried Logistic Regression, Random Forest Classifier, K-Neighbors Classifier, Naive Bayes classifier (Multinomial NB), Naive Bayes classifier (Gaussian NB), and Decision Tree Classifier.
+
+Logistic Regression Model gave us highest accuracy and has been chosen for making predictions for this project.
+Further application was developed to automate the loan eligibility process in real time based on the information provided by the customer applying for a loan.
 
 ## Data Description
 

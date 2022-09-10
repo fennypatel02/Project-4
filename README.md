@@ -16,7 +16,7 @@ Further application was developed to automate the loan eligibility process in re
 # Data 
 
 ## About the Data
-The dataset contains information about Loan Applicants. This dataset includes attributes like Loan ID, gender, if the loan applicant is married or not, the level of education, applicant’s income etc. 
+The dataset contains information about Loan Applicants. This dataset includes attributes like Loan ID, gender, marital status, the level of education, applicant’s income etc. 
 
 To load the loan data in your jupyter notebook, use the below command:
 

@@ -49,9 +49,9 @@ def prediction():
 	else:
 		proper=2
 	if (education=='graduate'):
-		education=0
-	else:
 		education=1
+	else:
+		education=0
 	try:
 		dependat = int(dependat)
 		annual_income = int(annual_income)

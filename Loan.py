@@ -49,9 +49,9 @@ def prediction():
 	else:
 		proper=2
 	if (education=='graduate'):
-		education=0
-	else:
 		education=1
+	else:
+		education=0
 	try:
 		dependat = int(dependat)
 		annual_income = int(annual_income)
@@ -60,7 +60,7 @@ def prediction():
 		Loan_amount_term = int(Loan_amount_term)
 		credit = int(credit)
 		x_app = np.array([[gender, married, dependat,education,employ,annual_income,co_income,Loan_amount,Loan_amount_term,credit,proper]])
-		model = joblib.load('data\Loan_status.pkl')
+		model = joblib.load('Loan_status.pkl')
 		ans = model.predict(x_app)
 		if (ans==1):
 			print("Congratulations your eligible for this loan!!")

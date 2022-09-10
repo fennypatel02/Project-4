@@ -1,7 +1,7 @@
 # Loan Prediction Application Using Logistic Regression and Machine Learning
- * by: Vasanta Prayaga, Fenny Patel, Luis Hernandez, Ali Saghafi, Parisa Charkhgary
+ * By: Vasanta Prayaga, Fenny Patel, Luis Hernandez, Ali Saghafi, Parisa Charkhgary
  
-![Loan](https://github.com/fennypatel02/Project-4/blob/main/templates/loanpre-thumbnail-1200x1200%202.png)
+![Loan](https://github.com/fennypatel02/Project-4/blob/main/templates/loanpre-thumbnail.png)
 
 ### Content
 

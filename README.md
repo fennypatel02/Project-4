@@ -25,6 +25,7 @@ To load the training data in your jupyter notebook, use the below command:
 import pandas as pd
 ```
 loan_data  = pd.read_csv("https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_train.csv" )
+```
 
 ## Data Description
 

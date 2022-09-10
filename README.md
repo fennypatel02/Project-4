@@ -2,6 +2,9 @@
 Loan Prediction Application Using
 Logistic Regression and Machine Learning
 
+# Content
+
+A loan application is used by borrowers to apply for a loan. Through the loan application, borrowers reveal key details about their finances to the lender. The loan application is crucial to determining whether the lender will grant the request for funds or credit.
 
 ## Data Description
 
@@ -17,4 +20,10 @@ Logistic Regression and Machine Learning
 * Loan_Amount_Term: The  no. of days over which the loan will be paid
 * Credit_History: A record of a borrower's responsible repayment of debts (1- has all debts paid, 0- not paid)
 * Property_Area : The type of location where the applicant’s property lies (Rural, Semiurban, Urban)
+
+
+## Target:
+
+* Loan_Status: Loan granted or not (Y, N)
+
 

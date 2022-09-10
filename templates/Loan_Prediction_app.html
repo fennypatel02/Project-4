@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        #header img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+        }
+        
+        #header h1 {
+            background: rgb(245, 83, 83);
+            text-align: center;
+            padding: 30px;
+            top: 50%;
+        }
+    </style>
+
+    <title>Loan eligibility predictior </title>
+
+</head>
+
+<body style="background-color: rgb(247, 242, 235);">
+    <div id="header">
+        <img src="https://png.pngtree.com/png-vector/20190418/ourlarge/pngtree-vector-gaving-money-icon-png-image_953060.jpg" alt="logo">
+        <h1>Loan Eligibility Predictor App</h1>
+    </div>
+
+    <div class="appform" style="background-color: rgb(187, 189, 192);">
+        <table align="center" class="reg">
+            <th>
+                <h2>Customer Data Form</h2>
+                <br>
+                <!--Form-->
+                <form action="{{url_for('prediction')}}" method="POST">
+                    <br>
+                    <!--Gender-->
+                    <label>Select gender</label>&nbsp&nbsp
+                    <input type="radio" value="Male" name="gender">Male
+                    <input type="radio" value="Female" name="gender">Female
+                    <br><br>
+
+                    <!--Status-->
+                    <label>Status</label>&nbsp&nbsp
+                    <input type="radio" value="Married" name="status">Married
+                    <input type="radio" value="Single" name="status">single
+                    <br><br>
+
+                    <!--Dependents-->
+                    <label>Enter number of dependants</label>&nbsp&nbsp
+                    <input type="text" name="dependants" , placeholder="0/1/2/3+">
+                    <br><br>
+
+                    <!--Education-->
+                    <label>Education Level</label>&nbsp&nbsp
+                    <select name="education">
+			        <option value="Graduate"   value="Graduate">Graduate</option>
+			        <option value="Not Graduate"  value="Not Graduate"> Not Graduate</option>
+		            </select>
+                    <br><br>
+
+                    <!--Employment-->
+                    <label>Employment status</label>&nbsp&nbsp
+                    <select name="employ">
+			        <option value="No">Employed</option>
+			        <option value="Yes"> Self Employed</option>
+			        <option value="Yes">Both</option>
+			        <option value="No">None of above</option>
+		            </select>
+                    <br><br>
+
+                    <!--Applicant income-->
+                    <label>Enter your annual income (K) </label>&nbsp&nbsp
+                    <input type="text" name="aincome" , placeholder="0">
+                    <br><br>
+
+                    <!--Co-applicant income-->
+                    <label>Enter your CoApplicant-income (K) </label>&nbsp&nbsp
+                    <input type="text" name="coincome" , placeholder="0">
+                    <br><br>
+
+                    <!--Loan amount-->
+                    <label>Loan amount (K) </label>&nbsp&nbsp
+                    <input type="text" name="Lamount" , placeholder="0">
+                    <br><br>
+
+                    <!--Loan term-->
+                    <label>Loan amount term (months) </label>&nbsp&nbsp
+                    <input type="text" name="Lamount_term" , placeholder="360">
+                    <br><br>
+
+                    <!--Credit history-->
+                    <label>Do you have a credit history (1-Yes/0-No) </label>&nbsp&nbsp
+                    <input type="text" name="credit" , placeholder="0/1">
+                    <br><br>
+
+                    <!--Property area-->
+                    <label>Select your property area </label>&nbsp&nbsp
+                    <select name="property_area">
+		            <option value="urban">Urban</option>
+		            <option value="Semiurban">Semi Urban</option>
+		            <option value="Rural">Rural</option>
+		            </select>
+                    <br><br>
+
+                    <!--Submit button centered-->
+                    <input type="submit" value="Submit" class="btn-dark " style="margin-left: 30px;">
+                </form>
+            </th>
+        </table>
+
+    </div>
+
+    <footer>
+        <div>
+            <!--credits-->
+            <p style="text-align: center;">Developed by <a href="Loan_Prediction_app.html">Vasanta Prayaga, Fenny Patel, Parisa Ch, Ali Sa, Luis Hernandez @2022</a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loan eligibility result</title>
+    <style>
+        #overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: #999;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            z-index: 100;
+        }
+        
+        #popup {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            width: 500px;
+            height: 250px;
+            margin-left: -250px;
+            /*Half the value of width to center div*/
+            margin-top: -250px;
+            /*Half the value of height to center div*/
+            z-index: 200;
+        }
+        
+        #popupclose {
+            float: right;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .popupcontent {
+            padding: 10px;
+        }
+        
+        #button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightgray;">
+    <div id="maincontent">
+        <h1 style="text-align: center;">Please wait while we process your request and check for your eligibility!!</h1>
+        <h2>
+            <button id="button" style="margin-left: 1000px;">Check result</button>
+    </div>
+    <div id="overlay"></div>
+    <div id="popup">
+        <div class="popupcontrols">
+            <span id="popupclose">X</span>
+        </div>
+        <div class="popupcontent" style="background-color: lightgray;">
+            <h1 style="text-align: center;">Thank you for your patience!!</h1>
+            <div class="app">
+                <section>
+                    <table align="center">
+                        <th>
+                            <h1> Your information has been submitted. </h1><br> {% if prediction== 1 %}
+                            <h1>Congratulations you are eligble for this loan!!</h1>
+                            <br><br> {% elif prediction==0 %}
+                            <h1 style="color: red">We are sad to inform you that your are not eligible for this loan.</h1>
+                            {% endif %}
+                        </th>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        // Initialize Variables
+        var closePopup = document.getElementById("popupclose");
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        var button = document.getElementById("button");
+        // Close Popup Event
+        closePopup.onclick = function() {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        };
+        // Show Overlay and Popup
+        button.onclick = function() {
+            overlay.style.display = 'block';
+            popup.style.display = 'block';
+        }
+    </script>
+</body>
+<footer>
+    <div>
+        <!--credits-->
+        <p style="text-align: center;">Developed by <a href="Loan_Prediction_app.html">Vasanta Prayaga, Fenny Patel, Parisa Ch, Ali Sa, Luis Hernandez @2022</a>
+
+    </div>
+</footer>
+
+</html>

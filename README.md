@@ -7,7 +7,7 @@
 
 ## Presentation :
 
-Our Tablue Overview presentation is [Loan Predicion](https://public.tableau.com/app/profile/parisa.charkhgary/viz/LoanPrediction_16628356042020/LoanPrediction)
+Our Tablue Overview presentation is [Loan Prediction](https://public.tableau.com/app/profile/parisa.charkhgary/viz/LoanPrediction_16628356042020/LoanPrediction)
 
 ### Content
 
